@@ -6,7 +6,7 @@ img {
 body {
   transition: background 0.3s, color 0.3s;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body.light {
