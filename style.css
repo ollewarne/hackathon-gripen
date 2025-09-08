@@ -1,3 +1,28 @@
+body {
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+button {
+  margin: 20px 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
 a:hover {
     transform: scale(1.5);
 }
