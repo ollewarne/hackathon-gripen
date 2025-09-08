@@ -1,7 +1,12 @@
+
+img {
+    width: 200px;
+    height: auto;
+}
 body {
   transition: background 0.3s, color 0.3s;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body.light {
@@ -41,4 +46,28 @@ button {
 a:hover {
     transform: scale(1.5);
 }
+
 */
+
+
+/* Scroll-to-top-knappen */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background: #555;
+}
+
