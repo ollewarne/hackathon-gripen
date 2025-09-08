@@ -28,9 +28,27 @@ button {
   font-size: 16px;
 }
 
+
+/* Styling på presentation  */
+
+.presentation {
+  background: blanchedalmond;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;                  /* rundade hörn */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* mjuk skugga */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+/* 
 a:hover {
     transform: scale(1.5);
 }
+
+*/
+
 
 /* Scroll-to-top-knappen */
 #scrollTopBtn {
@@ -52,3 +70,4 @@ a:hover {
 #scrollTopBtn:hover {
   background: #555;
 }
+
