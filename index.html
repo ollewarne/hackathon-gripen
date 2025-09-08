@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="script.js"></script>
     <title>Hacktaton GRIPEN</title>
 </head>
 <body>
 
+    <!-- Main med section med information för varje team-medlem -->
     <main>
+
+        <button id="toggleBtn">Växla tema</button>
+        <button id="resetBtn">Återställ till systemtema</button>
+
+        <!-- Navigationslänkar till respektive team-medlem -->
+        <nav>
+            <a href="#Ingrid">Ingrid</a>
+            <a href="#Olle">Olle</a>
+            <a href="#Mårten">Mårten</a>
+            <a href="#Delzar">Delzar</a>
+            <a href="#Twana">Twana</a>
+            <a href="#Malsha">Malsha</a>
+            <a href="#Mattias">Mattias</a>
+        </nav>
+
+        <!-- Sektioner för varje team-medlem, unikt #ID för varje medlem -->
         <section class="presentation" id="Ingrid">
+            <aside>
+                <img src="image/Ingrid.jpeg" alt="Bild på Ingrid Berggren"> 
+            </aside>
+            <article>
+                <h1>Ingrid Berggren</h1>
+                <p>Linköping</p>
+                <p>Den yrkesroll som är enklast att få med bäst betalt. Inte kräsen!</p>
+            </article>
+            
 
         </section>
         <section class="presentation" id="Olle"> 
-
+            <img src="./image/ollebild.png" alt="">
+            <p>Jag heter Olle. Jag är 31 år och har precis flyttat till Linköping.</p>
+            <p>Mitt framtida mål är att arbeta som backend dev.</p>
         </section>
         <section class="presentation" id="Mårten"> 
             <h2>Om mig</h2>
@@ -25,7 +55,7 @@
         <section class="presentation" id="Delzar"> 
 
         <h2>Om mig</h2>
-        <img src="me.jpg" alt="Bild på mig" width="200">
+        <img src="./image/me.jpg" alt="Bild på mig" width="200">
 
         <p>Hej! Jag heter Delzar, är 40 år och pappa till fyra barn – samt två bonusbarn via min särbo. Jag arbetar på ett LSS-boende och trivs väldigt bra. Trots att jag älskar mitt jobb finns det begränsade utvecklingsmöjligheter. Nu när barnen är större har jag mer tid och satsar därför på något jag alltid velat – att kunna koda. Min dröm är att en dag bygga ett eget mer avancerat spel. Jag har redan gjort några enklare spel och prototyper.</p>
 
@@ -51,6 +81,7 @@
     
 </body>
 
+<!-- Footer ADDITIONAL INFORMATION? Typ VÄDER OSV? -->
 <footer>
 
 </footer>
