@@ -70,4 +70,102 @@ a:hover {
 #scrollTopBtn:hover {
   background: #555;
 }
+/* ===== LÄGG TILL NEDANFÖR DIN BEFINTLIGA CSS ===== */
+
+/* Centrera hela sidan och ge maxbredd */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Välkomstsektionen i mitten med lagom storlekar */
+.welcome {
+  text-align: center;
+  margin: 32px auto 20px;
+  max-width: 800px;
+}
+.welcome h1 { font-size: clamp(32px, 6vw, 56px); margin: 0 0 8px; }
+.welcome h2 { font-size: clamp(24px, 5vw, 40px); margin: 0 0 6px; }
+.welcome h3 { font-size: clamp(20px, 4.5vw, 32px); margin: 0 0 10px; }
+
+/* Navi-länkar centrerade och radbrytbara (om du har <nav>) */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  justify-content: center;
+  margin: 10px auto 22px;
+  padding: 6px 4px;
+}
+nav a { display: inline-block; padding: 6px 10px; border-radius: 8px; }
+
+/* Presentationskort: bild överst, text under – allt centrerat */
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centrerar innehåll horisontellt */
+  text-align: center;    /* centrerar text */
+  gap: 10px;
+}
+
+/* Centrera alla bilder i presentationer (oavsett var de ligger) */
+.presentation > img,
+.presentation aside img,
+.presentation .profilbild {
+  display: block;
+  margin: 0 auto 8px;
+  max-width: min(220px, 90%);
+  height: auto;  /* respekterar din globala img-regel */
+  border-radius: 12px;
+}
+
+/* Gör så eventuell <article> och text inte blir för bred */
+.presentation article,
+.presentation p,
+.presentation ul {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Lite bättre spacing på listor i presentationerna */
+.presentation ul { padding-left: 0; list-style-position: inside; }
+
+/* Knapp-rad centrerad (valfritt om du vill ha knapparna i mitten också) */
+#toggleBtn, #resetBtn { margin: 12px 8px; }
+#toggleBtn, #resetBtn { display: inline-block; }
+main > #toggleBtn, main > #resetBtn { /* om knapparna ligger direkt i <main> */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+/* Placera knapparna som en liten kontrollpanel uppe till höger */
+#toggleBtn, #resetBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin: 0 0 10px 0;   /* mellanrum mellan knapparna */
+  display: block;       /* stapla dem under varandra */
+  min-width: 160px;     /* ser jämnare ut */
+  text-align: left;     /* texten snyggare med ikon */
+  z-index: 1000;        /* alltid överst */
+}
+
+/* Om du vill ha dem sida vid sida i stället */
+.button-row {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+.button-row button {
+  margin: 0;
+}
+
 
