@@ -42,3 +42,19 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e =
     setTheme(e.matches ? "dark" : "light");
   }
 });
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Visa/dölj knappen vid scroll
+window.addEventListener("scroll", () => {
+  scrollTopBtn.style.display =
+    document.documentElement.scrollTop > 200 ? "block" : "none";
+});
+
+// Scrolla uppåt smidigt
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
